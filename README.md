@@ -1,9 +1,8 @@
 # spring-boot-kafka
 practice tutorials with kafka and zookeeper
 
-## Tutorial 2
+## Tutorial 3
 
-**branch name** => T2-json-serialization
+**branch name** => T3-string-json-serialization
 
-## This will ***produce*** and ***consume*** the JSON message.
-readme updated
+## This will ***produce*** and ***consume*** the JSON message and String messages.
