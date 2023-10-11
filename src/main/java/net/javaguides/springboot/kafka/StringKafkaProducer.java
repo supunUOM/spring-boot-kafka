@@ -9,15 +9,15 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Slf4j
-public class KafkaProducer {
+public class StringKafkaProducer {
     @Value("${spring.kafka.topic.name}")
     private String topicName;
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(KafkaProducer.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(StringKafkaProducer.class);
 
     private KafkaTemplate<String, String> kafkaTemplate;
 
-    public KafkaProducer(KafkaTemplate<String, String> kafkaTemplate) {
+    public StringKafkaProducer(KafkaTemplate<String, String> kafkaTemplate) {
         this.kafkaTemplate = kafkaTemplate;
     }
 
