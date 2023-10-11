@@ -6,3 +6,4 @@ practice tutorials with kafka and zookeeper
 **branch name** => T2-json-serialization
 
 ## This will ***produce*** and ***consume*** the JSON message.
+readme updated
