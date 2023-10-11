@@ -1,6 +1,6 @@
 package net.javaguides.springboot;
 
-import net.javaguides.springboot.kafka.KafkaProducer;
+import net.javaguides.springboot.kafka.StringKafkaProducer;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -9,10 +9,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 class SpringbootKafkaApplicationTests {
 
     @Autowired
-    private KafkaProducer kafkaProducer;
+    private StringKafkaProducer stringKafkaProducer;
 
     @Test
     void testStringSerialize() {
-		kafkaProducer.sendMessage("hello world");
+		stringKafkaProducer.sendMessage("hello world");
     }
 }
